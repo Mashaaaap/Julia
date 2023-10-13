@@ -108,6 +108,7 @@ body {
             border-radius: 5px;
             background: #9A8D87;
             font-family: 'Crimson Pro';
+            transition: background .4s ease-in-out;
 
             @media (max-width: 1024px) {
                 margin-top: 28%;
@@ -119,6 +120,11 @@ body {
                 font-size: 18px;
                 margin-top: 16%;
                 height: 60px;
+            }
+
+            &:hover {
+                background: #756763;
+                transition: .4s ease-in-out;
             }
         }
     }

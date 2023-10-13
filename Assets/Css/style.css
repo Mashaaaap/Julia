@@ -119,6 +119,7 @@ body p::selection {
   border-radius: 5px;
   background: #9A8D87;
   font-family: "Crimson Pro";
+  transition: background 0.4s ease-in-out;
 }
 @media (max-width: 1024px) {
   .ballet_sidebar button {
@@ -133,6 +134,10 @@ body p::selection {
     margin-top: 16%;
     height: 60px;
   }
+}
+.ballet_sidebar button:hover {
+  background: #756763;
+  transition: 0.4s ease-in-out;
 }
 .ballet_photos p {
   font-family: "Vivaldi";
