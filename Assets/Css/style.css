@@ -14,8 +14,33 @@ body h1 {
   margin: 35px 0 10px;
   font-family: "Crimson Pro";
 }
+body h1::-moz-selection {
+  background: #CCB4AE;
+  color: #FFFFFF;
+}
+body h1::selection {
+  background: #CCB4AE;
+  color: #FFFFFF;
+}
 body a {
   color: #000;
+  font-size: 20px;
+}
+body a::-moz-selection {
+  background: #CCB4AE;
+  color: #FFFFFF;
+}
+body a::selection {
+  background: #CCB4AE;
+  color: #FFFFFF;
+}
+body p::-moz-selection {
+  background: #89918b;
+  color: #ffffff;
+}
+body p::selection {
+  background: #89918b;
+  color: #ffffff;
 }
 
 .ballet {

@@ -13,10 +13,26 @@ body {
         font-weight: 700;
         margin: 35px 0 10px;
         font-family: 'Crimson Pro';
+
+        &::selection {
+            background: #CCB4AE;
+            color: #FFFFFF;
+        }
     }
 
     a {
         color: #000;
+        font-size: 20px;
+
+        &::selection {
+            background: #CCB4AE;
+            color: #FFFFFF;
+        }
+    }
+
+    p::selection {
+        background: #89918b;
+        color: #ffffff;
     }
 }
 
