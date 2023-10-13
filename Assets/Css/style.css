@@ -5,7 +5,7 @@
 
 body {
   font-weight: 400;
-  overflow: hidden;
+  overflow-x: hidden;
   background: linear-gradient(to top, #FFFFFF 46%, #FFFFFF 100%);
 }
 body h1 {
@@ -13,6 +13,12 @@ body h1 {
   font-weight: 700;
   margin: 35px 0 10px;
   font-family: "Crimson Pro";
+}
+@media (max-width: 769px) {
+  body h1 {
+    font-size: 32px;
+    margin: 15px 0 10px;
+  }
 }
 body h1::-moz-selection {
   background: #CCB4AE;
@@ -25,6 +31,11 @@ body h1::selection {
 body a {
   color: #000;
   font-size: 20px;
+}
+@media (max-width: 769px) {
+  body a {
+    font-size: 15px;
+  }
 }
 body a::-moz-selection {
   background: #CCB4AE;
@@ -51,12 +62,49 @@ body p::selection {
   flex-direction: row;
   justify-content: space-around;
 }
+@media (max-width: 769px) {
+  .ballet {
+    gap: 45px;
+  }
+}
+@media (max-width: 525px) {
+  .ballet {
+    gap: 30px;
+    padding: 30px;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 375px) {
+  .ballet {
+    padding: 20px;
+  }
+}
 .ballet_sidebar {
   width: 30%;
   height: 100%;
 }
+@media (max-width: 525px) {
+  .ballet_sidebar {
+    width: 100%;
+  }
+}
 .ballet_sidebar p {
   font-size: 26px;
+}
+@media (max-width: 1024px) {
+  .ballet_sidebar p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 998px) {
+  .ballet_sidebar p {
+    font-size: 18px;
+  }
+}
+@media (max-width: 769px) {
+  .ballet_sidebar p {
+    font-size: 14px;
+  }
 }
 .ballet_sidebar button {
   bottom: 0;
@@ -72,6 +120,20 @@ body p::selection {
   background: #9A8D87;
   font-family: "Crimson Pro";
 }
+@media (max-width: 1024px) {
+  .ballet_sidebar button {
+    margin-top: 28%;
+    font-size: 24px;
+    height: 75px;
+  }
+}
+@media (max-width: 769px) {
+  .ballet_sidebar button {
+    font-size: 18px;
+    margin-top: 16%;
+    height: 60px;
+  }
+}
 .ballet_photos p {
   font-family: "Vivaldi";
   letter-spacing: 40px;
@@ -80,10 +142,21 @@ body p::selection {
   font-size: 54px;
   margin: 15px 0;
 }
+@media (max-width: 768px) {
+  .ballet_photos p {
+    font-size: 26px;
+    letter-spacing: 20px;
+  }
+}
 .ballet_photos_block {
   gap: 25px;
   display: flex;
   justify-content: space-around;
+}
+@media (min-width: 525px) {
+  .ballet_photos_block {
+    gap: 15px;
+  }
 }
 .ballet_photos_block_img {
   width: 47%;
