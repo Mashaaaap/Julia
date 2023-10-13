@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 400;
+  overflow: hidden;
+  background: linear-gradient(to top, #FFFFFF 46%, #FFFFFF 100%);
+}
+body h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin: 35px 0 10px;
+  font-family: "Crimson Pro";
+}
+body a {
+  color: #000;
+}
+
+.ballet {
+  gap: 60px;
+  padding: 60px;
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.ballet_sidebar {
+  width: 30%;
+  height: 100%;
+}
+.ballet_sidebar p {
+  font-size: 26px;
+}
+.ballet_sidebar button {
+  bottom: 0;
+  width: 100%;
+  height: 90px;
+  border: none;
+  margin-top: 33%;
+  font-size: 30px;
+  color: #FFFFFF;
+  font-weight: 600;
+  position: relative;
+  border-radius: 5px;
+  background: #9A8D87;
+  font-family: "Crimson Pro";
+}
+.ballet_photos p {
+  font-family: "Vivaldi";
+  letter-spacing: 40px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 54px;
+  margin: 15px 0;
+}
+.ballet_photos_block {
+  gap: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.ballet_photos_block_img {
+  width: 47%;
+  height: 47%;
+}
+.ballet_photos_block_box {
+  width: 47%;
+  height: 90px;
+  border-radius: 5px;
+  background: #C2CDC5;
+}
+.ballet_photos_block_box:nth-child(2) {
+  background: #CCB4AE;
+}
